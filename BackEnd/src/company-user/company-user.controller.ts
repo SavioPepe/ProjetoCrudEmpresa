@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Delete, Param, Body, ParseIntPipe } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Param, Body, ParseIntPipe, HttpException, HttpStatus } from '@nestjs/common';
 import { CompanyUserService } from './company-user.service';
 import { CreateCompanyUserDto } from './dto/create-company-user.dto';
 import { UpdateCompanyUserDto } from './dto/update-company-user.dto';
@@ -9,32 +9,49 @@ export class CompanyUserController {
 
   @Post()
   async create(@Body() createCompanyUserDto: CreateCompanyUserDto) {
-    return this.companyUserService.create(createCompanyUserDto);
+    try {
+      return await this.companyUserService.create(createCompanyUserDto);
+    } catch (error) {
+      throw new HttpException('Erro ao criar a associação', HttpStatus.BAD_REQUEST);
+    }
   }
 
   @Get()
   async findAll() {
-    return this.companyUserService.findAll();
+    try {
+      return await this.companyUserService.findAll();
+    } catch (error) {
+      throw new HttpException('Erro ao buscar as associações', HttpStatus.BAD_REQUEST);
+    }
   }
 
-  // Agora, a rota utiliza um único parâmetro "id" que representa o identificador único da associação
   @Get(':id')
   async findOne(@Param('id', ParseIntPipe) id: number) {
-    return this.companyUserService.findOne(id);
+    try {
+      return await this.companyUserService.findOne(id);
+    } catch (error) {
+      throw new HttpException('Associação não encontrada', HttpStatus.NOT_FOUND);
+    }
   }
 
-  // UPDATE: Recebe somente o id único da associação para atualização
   @Put(':id')
   async update(
     @Param('id', ParseIntPipe) id: number,
     @Body() updateCompanyUserDto: UpdateCompanyUserDto,
   ) {
-    return this.companyUserService.update(id, updateCompanyUserDto);
+    try {
+      return await this.companyUserService.update(id, updateCompanyUserDto);
+    } catch (error) {
+      throw new HttpException('Erro ao atualizar a associação', HttpStatus.BAD_REQUEST);
+    }
   }
 
-  // DELETE: Remove a associação com base no id único
   @Delete(':id')
   async remove(@Param('id', ParseIntPipe) id: number) {
-    return this.companyUserService.remove(id);
+    try {
+      return await this.companyUserService.remove(id);
+    } catch (error) {
+      throw new HttpException('Erro ao remover a associação', HttpStatus.BAD_REQUEST);
+    }
   }
 }

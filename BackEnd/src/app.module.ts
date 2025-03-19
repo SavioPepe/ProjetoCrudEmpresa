@@ -19,7 +19,7 @@ import { CompanyUserModule } from './company-user/company-user.module';
       password: 'root',
       database: 'usuarioempresa',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: false, // Utilize migrations para gerenciar alterações do esquema
+      synchronize: false, 
       migrations: [__dirname + '/migrations/*{.ts,.js}'],
     }),
     AuthModule,
