@@ -2,24 +2,29 @@
 ### USUARIOS ###
 
 GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 
 
 ###
 
 
-GET http://localhost:3000/users/6
+GET http://localhost:3000/users/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
 
 
 ###
 
 POST http://localhost:3000/users
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 {
-  "name": "joaoteste",
-  "email": "joaoteste@example.com",
-  "password": "123"
+  "name": "jorge123",
+  "email": "jorge123@example.com",
+  "password": "123123"
 }
 
 ###
@@ -27,6 +32,8 @@ Content-Type: application/json
 
 PUT http://localhost:3000/users/6
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 {
   "name": "joaoteste",
@@ -37,39 +44,51 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 
 
 ### EMPRESAS ###
 
 GET http://localhost:3000/companies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 
 ###
 
 POST http://localhost:3000/companies
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 {
-  "name": "teste123",
-  "address": "teste123"
+  "name": "testando",
+  "address": "tesstando102030"
 }
 
 ###
 
 
 DELETE http://localhost:3000/companies/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 
 ### USER-EMPRESAS ###
 
 GET http://localhost:3000/company-user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 
 ###
 
 POST http://localhost:3000/company-user
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+
 
 {
   "userId": 1,
@@ -84,6 +103,6 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "email": "joao@example.com",
-  "password": "123"
+  "email": "jorge123@example.com",
+  "password": "123123"
 }

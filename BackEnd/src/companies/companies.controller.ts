@@ -1,7 +1,15 @@
-import { Controller, Get, Post, Body, Param, Put, Delete,HttpException, HttpStatus  } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, Put, Delete,HttpException, HttpStatus,UseGuards  } from '@nestjs/common';
 import { CompaniesService } from './companies.service';
 import { CreateCompanyDto } from './dto/create-company.dto';
+import { AuthGuard } from '@nestjs/passport';
+
+
+
+
+
 @Controller('companies')
+@UseGuards(AuthGuard('jwt'))
+
 export class CompaniesController {
   constructor(private readonly companiesService: CompaniesService) {}
 

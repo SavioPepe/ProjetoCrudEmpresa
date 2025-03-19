@@ -1,9 +1,13 @@
-import { Controller, Get, Post, Put, Delete, Param, Body, ParseIntPipe, HttpException, HttpStatus } from '@nestjs/common';
+import { Controller, Get, Post, Put, Delete, Param, Body, ParseIntPipe, HttpException, HttpStatus ,UseGuards} from '@nestjs/common';
 import { CompanyUserService } from './company-user.service';
 import { CreateCompanyUserDto } from './dto/create-company-user.dto';
 import { UpdateCompanyUserDto } from './dto/update-company-user.dto';
+import { AuthGuard } from '@nestjs/passport';
+
 
 @Controller('company-user')
+@UseGuards(AuthGuard('jwt'))
+
 export class CompanyUserController {
   constructor(private readonly companyUserService: CompanyUserService) {}
 
