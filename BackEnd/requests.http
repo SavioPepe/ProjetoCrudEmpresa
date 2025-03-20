@@ -2,7 +2,7 @@
 ### USUARIOS ###
 
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvcmdlMTIzQGV4YW1wbGUuY29tIiwic3ViIjo2LCJpYXQiOjE3NDI0ODk1MjcsImV4cCI6MTc0MjQ5MzEyN30.mZaWAPfTvupOkJnXkcpWYJRMN89iqNirKLf-PlaBFo4
+Authorization: Bearer 
 
 
 
@@ -11,15 +11,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Impvc
 
 
 GET http://localhost:3000/users/3
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 ###
 
 POST http://localhost:3000/users
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
-
+Authorization: Bearer 
 
 {
   "name": "jorge123",
@@ -32,7 +31,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvY
 
 PUT http://localhost:3000/users/6
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 {
@@ -44,7 +43,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvY
 ###
 
 DELETE http://localhost:3000/users/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 
@@ -52,7 +51,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvY
 ### EMPRESAS ###
 
 GET http://localhost:3000/companies
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 
@@ -60,7 +59,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvY
 
 POST http://localhost:3000/companies
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 {
@@ -72,14 +71,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvY
 
 
 DELETE http://localhost:3000/companies/5
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 
 ### USER-EMPRESAS ###
 
 GET http://localhost:3000/company-user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 
@@ -87,7 +86,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvY
 
 POST http://localhost:3000/company-user
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer 
 
 
 {

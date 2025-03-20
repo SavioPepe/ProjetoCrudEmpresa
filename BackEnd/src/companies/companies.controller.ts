@@ -1,15 +1,10 @@
-import { Controller, Get, Post, Body, Param, Put, Delete,HttpException, HttpStatus,UseGuards  } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Post, Put, UseGuards } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { CompaniesService } from './companies.service';
 import { CreateCompanyDto } from './dto/create-company.dto';
-import { AuthGuard } from '@nestjs/passport';
-
-
-
-
 
 @Controller('companies')
 @UseGuards(AuthGuard('jwt'))
-
 export class CompaniesController {
   constructor(private readonly companiesService: CompaniesService) {}
 
@@ -34,7 +29,8 @@ export class CompaniesController {
   @Get(':id')
   async findOne(@Param('id') id: string) {
     try {
-      return await this.companiesService.findOne(id);
+      const companyId = parseInt(id, 10);
+      return await this.companiesService.findOne(companyId);
     } catch (error) {
       throw new HttpException('Empresa não encontrada', HttpStatus.NOT_FOUND);
     }
@@ -43,7 +39,8 @@ export class CompaniesController {
   @Put(':id')
   async update(@Param('id') id: string, @Body() updateCompanyDto: Partial<CreateCompanyDto>) {
     try {
-      return await this.companiesService.update(id, updateCompanyDto);
+      const companyId = parseInt(id, 10);
+      return await this.companiesService.update(companyId, updateCompanyDto);
     } catch (error) {
       throw new HttpException('Erro ao atualizar a empresa', HttpStatus.BAD_REQUEST);
     }
@@ -52,7 +49,8 @@ export class CompaniesController {
   @Delete(':id')
   async remove(@Param('id') id: string) {
     try {
-      return await this.companiesService.remove(id);
+      const companyId = parseInt(id, 10);
+      return await this.companiesService.remove(companyId);
     } catch (error) {
       throw new HttpException('Erro ao remover a empresa', HttpStatus.BAD_REQUEST);
     }

@@ -2,7 +2,6 @@
     <div class="home">
       <h1>Home</h1>
   
-      <!-- Cadastro de Usuário -->
       <section class="registration-section">
         <h2>Cadastro de Usuário</h2>
         <form @submit.prevent="registerUser">
@@ -13,7 +12,6 @@
         </form>
       </section>
   
-      <!-- Cadastro de Empresa -->
       <section class="registration-section">
         <h2>Cadastro de Empresa</h2>
         <form @submit.prevent="registerCompany">
@@ -23,7 +21,6 @@
         </form>
       </section>
   
-      <!-- Cadastro de Associação -->
       <section class="registration-section">
         <h2>Cadastro de Associação</h2>
         <form @submit.prevent="registerAssociation">

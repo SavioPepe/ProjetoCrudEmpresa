@@ -1,8 +1,8 @@
-import { Controller, Get, Post, Put, Delete, Param, Body, ParseIntPipe, HttpException, HttpStatus ,UseGuards} from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, ParseIntPipe, Post, Put, UseGuards } from '@nestjs/common';
+import { AuthGuard } from '@nestjs/passport';
 import { CompanyUserService } from './company-user.service';
 import { CreateCompanyUserDto } from './dto/create-company-user.dto';
 import { UpdateCompanyUserDto } from './dto/update-company-user.dto';
-import { AuthGuard } from '@nestjs/passport';
 
 
 @Controller('company-user')

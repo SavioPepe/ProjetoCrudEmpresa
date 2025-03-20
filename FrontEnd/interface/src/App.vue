@@ -2,20 +2,11 @@
   <div :id="pageClass">
     <!-- Header -->
     <header class="app-header">
-      <div class="menu-left">
-        <router-link to="/home" class="home-link" @click="closeMenu">Home</router-link>
-      </div>
 
       <!-- Container para o link "Sair" -->
       <div class="menu-right">
         <router-link to="/login" class="sair-link" @click="logout">Sair</router-link>
       </div>
-
-      <!-- Navegação Simplificada -->
-      <nav class="navigation" :class="{ show: menuOpen }" v-if="!hideLinks">
-        <router-link to="/home" @click="closeMenu">Home</router-link>
-      </nav>
-
       <div class="menu-icon" @click="toggleMenu" v-if="!hideLinks">
         <i class="fas fa-bars"></i>
       </div>
