@@ -2,7 +2,7 @@
 ### USUARIOS ###
 
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvYW9AZXhhbXBsZS5jb20iLCJzdWIiOjEsImlhdCI6MTc0MjM0NTcwNCwiZXhwIjoxNzQyMzQ5MzA0fQ.M8Za_xbu5k3sOSBCdaq_a8BOYj34A7MXnzLN8VcBxvs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvcmdlMTIzQGV4YW1wbGUuY29tIiwic3ViIjo2LCJpYXQiOjE3NDI0ODk1MjcsImV4cCI6MTc0MjQ5MzEyN30.mZaWAPfTvupOkJnXkcpWYJRMN89iqNirKLf-PlaBFo4
 
 
 
