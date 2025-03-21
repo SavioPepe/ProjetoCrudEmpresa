@@ -25,16 +25,8 @@ Este repositório contém:
 ## Sumário
 
 - [Backend (NestJS)](#backend-nestjs)
-  - [Instalação](#instalação-backend)
-  - [Execução](#execução-backend)
-  - [Testes](#testes-backend)
-  - [Deploy](#deploy-backend)
-  - [Recursos](#recursos-backend)
-- [Frontend (Vue.js)](#frontend-vuejs)
-  - [Instalação e Execução](#instalação-e-execução-frontend)
-- [Tecnologias Adicionais](#tecnologias-adicionais)
-- [Licença](#licença)
-- [Backend (NestJS)](#backend-nestjs)
+- [Instalação](#instalação-backend)
+- [Execução](#execução-backend)
 - [Frontend (Vue.js)](#frontend-vuejs)
 - [Tecnologias Adicionais](#tecnologias-adicionais)
 - [Licença](#licença)
@@ -59,17 +51,6 @@ npm run start:dev
 
 # Modo de produção
 npm run start:prod
-```
-
-# Testes unitários
-```bash
-npm run test
-
-# Testes end-to-end (e2e)
-npm run test:e2e
-
-# Cobertura de testes
-npm run test:cov
 ```
 
 ---
