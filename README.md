@@ -59,9 +59,10 @@ npm run start:dev
 
 # Modo de produção
 npm run start:prod
-
+```
 
 # Testes unitários
+```bash
 npm run test
 
 # Testes end-to-end (e2e)
@@ -69,7 +70,7 @@ npm run test:e2e
 
 # Cobertura de testes
 npm run test:cov
-
+```
 
 ---
 ## Tecnologias Adicionais
