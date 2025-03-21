@@ -26,8 +26,6 @@ Este repositório contém:
 
 - [Backend (NestJS)](#backend-nestjs)
 - [Instalação](#instalação-backend)
-- [Execução](#execução-backend)
-- [Frontend (Vue.js)](#frontend-vuejs)
 - [Tecnologias Adicionais](#tecnologias-adicionais)
 - [Licença](#licença)
 
