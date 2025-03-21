@@ -1,9 +1,7 @@
 <template>
   <div :id="pageClass">
-    <!-- Header -->
     <header class="app-header">
 
-      <!-- Container para o link "Sair" -->
       <div class="menu-right">
         <router-link to="/login" class="sair-link" @click="logout">Sair</router-link>
       </div>
@@ -12,7 +10,6 @@
       </div>
     </header>
 
-    <!-- Main Content -->
     <main class="app-content">
       <router-view />
     </main>
@@ -57,7 +54,7 @@ export default {
 </script>
 
 <style scoped>
-/* Container Geral */
+
 #app,
 .app {
   font-family: 'Roboto', Arial, sans-serif;
@@ -69,7 +66,6 @@ export default {
   padding: 0 10px;
 }
 
-/* Header */
 .app-header {
   position: relative;
   background: rgba(247, 245, 245, 0.904);
@@ -89,7 +85,6 @@ export default {
   width: 100%;
 }
 
-/* Menu Esquerdo (Home) */
 .menu-left {
   display: none;
 }
@@ -108,7 +103,6 @@ export default {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* Botão Sair */
 .menu-right .sair-link {
   color: #000000;
   text-decoration: none;
@@ -124,7 +118,6 @@ export default {
   background: rgb(209, 181, 181);
 }
 
-/* Navegação */
 .navigation {
   display: flex;
   gap: 1rem;
@@ -142,7 +135,6 @@ export default {
   background: rgba(255, 255, 255, 0.973);
 }
 
-/* Menu Hamburguer */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -150,7 +142,6 @@ export default {
   color: #fff;
 }
 
-/* Main Content */
 .app-content {
   flex: 1;
   padding: 20px;
@@ -174,7 +165,6 @@ export default {
   }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .menu-left {
     display: block;
