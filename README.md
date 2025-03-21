@@ -8,15 +8,16 @@
   </a>
 </p>
 
-
-<p align="center">Projeto CRUD de Empresas usando <strong>NestJS</strong> (Backend) e <strong>Vue.js</strong> (Frontend)</p>
+<p align="center">
+  Projeto CRUD de Empresas usando <strong>NestJS</strong> (Backend) e <strong>Vue.js</strong> (Frontend)
+</p>
 
 ---
 
 ## Descrição
 
 Este repositório contém:
-- **Backend**: construído com o [Nest](https://github.com/nestjs/nest) (TypeScript).
+- **Backend**: construído com o [NestJS](https://github.com/nestjs/nest) (TypeScript).
 - **Frontend**: construído com o [Vue.js](https://vuejs.org/).
 
 ---
@@ -24,12 +25,66 @@ Este repositório contém:
 ## Sumário
 
 - [Backend (NestJS)](#backend-nestjs)
-  - [Instalação](#instalação)
-  - [Execução](#execução)
-  - [Testes](#testes)
-  - [Deploy](#deploy)
-  - [Recursos](#recursos)
+  - [Instalação](#instalação-backend)
+  - [Execução](#execução-backend)
+  - [Testes](#testes-backend)
+  - [Deploy](#deploy-backend)
+  - [Recursos](#recursos-backend)
 - [Frontend (Vue.js)](#frontend-vuejs)
-  - [Instalação e Execução](#instalação-e-execução)
+  - [Instalação e Execução](#instalação-e-execução-frontend)
+- [Tecnologias Adicionais](#tecnologias-adicionais)
 - [Licença](#licença)
+- [Backend (NestJS)](#backend-nestjs)
+- [Frontend (Vue.js)](#frontend-vuejs)
+- [Tecnologias Adicionais](#tecnologias-adicionais)
+- [Licença](#licença)
+
+
+---
+
+## Backend (NestJS)
+
+### Instalação (Backend)
+
+```bash
+cd backend
+npm install
+
+
+# Modo de desenvolvimento
+npm run start
+
+# Modo watch (reinicia ao salvar)
+npm run start:dev
+
+# Modo de produção
+npm run start:prod
+
+
+# Testes unitários
+npm run test
+
+# Testes end-to-end (e2e)
+npm run test:e2e
+
+# Cobertura de testes
+npm run test:cov
+
+
+---
+## Tecnologias Adicionais
+
+- **JWT (JSON Web Tokens):**  
+  Utilizado para autenticação stateless. O backend gera um token JWT para cada usuário autenticado, permitindo validar requisições sem a necessidade de manter sessões no servidor.
+
+- **Prisma (ORM):**  
+  Um ORM moderno que simplifica a interação com o banco de dados, oferecendo tipagem estática, migrações automatizadas e facilitando as operações de CRUD.
+
+- **Axios:**  
+  Biblioteca para realizar requisições HTTP de forma simples e intuitiva, utilizada tanto no frontend quanto no backend para integrar com APIs e gerenciar a comunicação assíncrona.
+
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
