@@ -1,6 +1,13 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="_blank">
+    <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://vuejs.org/" target="_blank">
+    <img src="https://vuejs.org/images/logo.png" width="120" alt="Vue.js Logo" />
+  </a>
 </p>
+
 
 <p align="center">Projeto CRUD de Empresas usando <strong>NestJS</strong> (Backend) e <strong>Vue.js</strong> (Frontend)</p>
 
@@ -26,12 +33,3 @@ Este repositório contém:
   - [Instalação e Execução](#instalação-e-execução)
 - [Licença](#licença)
 
----
-
-## Backend (NestJS)
-
-### Instalação
-
-```bash
-cd backend
-npm install
