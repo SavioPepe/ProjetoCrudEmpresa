@@ -8,11 +8,11 @@ import { JwtStrategy } from '././jwt.strategy';
 
 @Module({
   imports: [
-    UsersModule, // Para ter acesso ao UsersService
+    UsersModule, 
     PassportModule,
     JwtModule.register({
-      secret: 'SUA_CHAVE_SECRETA', // Substitua por uma chave segura ou utilize variáveis de ambiente
-      signOptions: { expiresIn: '1h' },
+      secret: 'ROOT12345', 
+      signOptions: { expiresIn: '2h' },
     }),
   ],
   providers: [AuthService, JwtStrategy],
