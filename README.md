@@ -27,7 +27,6 @@ Este repositório contém:
 - [Backend (NestJS)](#backend-nestjs)
 - [Instalação](#instalação-backend)
 - [Tecnologias Adicionais](#tecnologias-adicionais)
-- [Licença](#licença)
 
 
 ---
@@ -62,9 +61,3 @@ npm run start:prod
 
 - **Axios:**  
   Biblioteca para realizar requisições HTTP de forma simples e intuitiva, utilizada tanto no frontend quanto no backend para integrar com APIs e gerenciar a comunicação assíncrona.
-
-
-## Licença
-
-Este projeto é licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
-
