@@ -1,16 +1,18 @@
 import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Post, Put } from '@nestjs/common';
+import { ApiBody, ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UsersService } from './users.service';
 
-
-
+@ApiTags('users')
 @Controller('users')
-//@UseGuards(AuthGuard('jwt'))
-
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
   @Post()
+  @ApiOperation({ summary: 'Cria um novo usuário' })
+  @ApiBody({ type: CreateUserDto })
+  @ApiResponse({ status: 201, description: 'Usuário criado com sucesso.' })
+  @ApiResponse({ status: 400, description: 'Erro ao criar usuário.' })
   async create(@Body() createUserDto: CreateUserDto) {
     try {
       return await this.usersService.create(createUserDto);
@@ -20,6 +22,9 @@ export class UsersController {
   }
 
   @Get()
+  @ApiOperation({ summary: 'Retorna todos os usuários' })
+  @ApiResponse({ status: 200, description: 'Usuários retornados com sucesso.' })
+  @ApiResponse({ status: 400, description: 'Erro ao buscar usuários.' })
   async findAll() {
     try {
       return await this.usersService.findAll();
@@ -29,6 +34,10 @@ export class UsersController {
   }
 
   @Get(':id')
+  @ApiOperation({ summary: 'Retorna um usuário pelo ID' })
+  @ApiParam({ name: 'id', type: String, description: 'ID do usuário' })
+  @ApiResponse({ status: 200, description: 'Usuário encontrado.' })
+  @ApiResponse({ status: 404, description: 'Usuário não encontrado.' })
   async findOne(@Param('id') id: string) {
     try {
       return await this.usersService.findOne(id);
@@ -38,6 +47,11 @@ export class UsersController {
   }
 
   @Put(':id')
+  @ApiOperation({ summary: 'Atualiza um usuário pelo ID' })
+  @ApiParam({ name: 'id', type: String, description: 'ID do usuário' })
+  @ApiBody({ type: CreateUserDto })
+  @ApiResponse({ status: 200, description: 'Usuário atualizado com sucesso.' })
+  @ApiResponse({ status: 400, description: 'Erro ao atualizar usuário.' })
   async update(@Param('id') id: string, @Body() updateUserDto: Partial<CreateUserDto>) {
     try {
       return await this.usersService.update(id, updateUserDto);
@@ -47,6 +61,10 @@ export class UsersController {
   }
 
   @Delete(':id')
+  @ApiOperation({ summary: 'Remove um usuário pelo ID' })
+  @ApiParam({ name: 'id', type: String, description: 'ID do usuário' })
+  @ApiResponse({ status: 200, description: 'Usuário removido com sucesso.' })
+  @ApiResponse({ status: 400, description: 'Erro ao remover usuário.' })
   async remove(@Param('id') id: string) {
     try {
       return await this.usersService.remove(id);
