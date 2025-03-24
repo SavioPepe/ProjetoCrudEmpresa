@@ -39,15 +39,29 @@ Este repositório contém:
 cd backend
 npm install
 
+# Modo watch (reinicia ao salvar)
+npm run start:dev
+
+### Instalação (FrontEnd)
+
+```bash
+cd interface
+npm install
+
+
+rodar FrontEnd
+
+npm run serve
+
 
 # Modo de desenvolvimento
 npm run start
 
-# Modo watch (reinicia ao salvar)
-npm run start:dev
 
 # Modo de produção
 npm run start:prod
+
+# Modo de produção
 
 npx prisma generate
 ```
@@ -63,3 +77,6 @@ npx prisma generate
 
 - **Axios:**  
   Biblioteca para realizar requisições HTTP de forma simples e intuitiva, utilizada tanto no frontend quanto no backend para integrar com APIs e gerenciar a comunicação assíncrona.
+
+- **Swagger:**
+  Ferramenta de documentação interativa que permite visualizar e testar os endpoints da API diretamente pelo navegador.
