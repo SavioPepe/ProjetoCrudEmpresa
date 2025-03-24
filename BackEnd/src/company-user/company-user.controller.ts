@@ -6,7 +6,7 @@ import { CreateCompanyUserDto } from './dto/create-company-user.dto';
 import { UpdateCompanyUserDto } from './dto/update-company-user.dto';
 
 @ApiTags('company-user')
-@ApiBearerAuth()
+@ApiBearerAuth('access-token')
 @Controller('company-user')
 @UseGuards(AuthGuard('jwt'))
 export class CompanyUserController {

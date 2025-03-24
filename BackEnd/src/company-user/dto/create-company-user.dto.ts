@@ -5,5 +5,5 @@ export class CreateCompanyUserDto {
   companyId: number;
 
   @ApiProperty()
-  userId: string;
+  userId: number;
 }

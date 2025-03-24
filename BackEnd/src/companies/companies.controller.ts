@@ -4,8 +4,9 @@ import { ApiBearerAuth, ApiBody, ApiOperation, ApiParam, ApiResponse, ApiTags } 
 import { CompaniesService } from './companies.service';
 import { CreateCompanyDto } from './dto/create-company.dto';
 
+
 @ApiTags('companies')
-@ApiBearerAuth()
+@ApiBearerAuth('access-token')
 @Controller('companies')
 @UseGuards(AuthGuard('jwt'))
 export class CompaniesController {

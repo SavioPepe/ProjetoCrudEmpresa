@@ -5,5 +5,5 @@ export class UpdateCompanyUserDto {
   companyId?: number;
 
   @ApiPropertyOptional()
-  userId?: string;
+  userId?: number;
 }

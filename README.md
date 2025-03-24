@@ -48,6 +48,8 @@ npm run start:dev
 
 # Modo de produção
 npm run start:prod
+
+npx prisma generate
 ```
 
 ---
