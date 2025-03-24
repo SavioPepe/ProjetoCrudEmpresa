@@ -24,18 +24,18 @@ Este repositório contém:
 
 ## Sumário
 
-- [Backend (NestJS)](#backend-nestjs)
 - [Instalação](#instalação-backend)
 - [Tecnologias Adicionais](#tecnologias-adicionais)
 
 
 ---
 
-## Backend (NestJS)
 
-### Instalação (Backend)
+## Instalação 
 
 ```bash
+
+### Instalação (BackEnd)
 cd backend
 npm install
 
