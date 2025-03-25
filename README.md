@@ -44,12 +44,11 @@ npm run start:dev
 
 ### Instalação (FrontEnd)
 
-```bash
 cd interface
 npm install
 
 
-rodar FrontEnd
+### rodar FrontEnd
 
 npm run serve
 
