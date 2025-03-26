@@ -17,7 +17,7 @@
 ## Descrição
 
 Este repositório contém:
-- **Backend**: construído com o [NestJS](https://github.com/nestjs/nest) (TypeScript).
+- **Backend**: construído com o [NestJS](https://nestjs.com/) (TypeScript).
 - **Frontend**: construído com o [Vue.js](https://vuejs.org/).
 
 ---
